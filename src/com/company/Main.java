@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -9,6 +11,7 @@ public class Main {
         System.out.println(number(50, 38));
         System.out.println(number(45, 27));
         System.out.println(number(19, 24));
+        System.out.println(ageRandomGenerate());
 
     }
 
@@ -24,5 +27,13 @@ public class Main {
         } else {
             return "Оставайтесь дома";
         }
+
     }
+    public static int ageRandomGenerate(){
+        Random rand = new Random();
+        int random= rand.nextInt(23);
+        return  random;
+
+    }
+
 }
